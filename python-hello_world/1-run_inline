@@ -1,12 +1,2 @@
 #!/bin/bash
-# Shell script to run Python code from an environment variable
-
-# Check if PYCODE is set and not empty
-if [ -z "$PYCODE" ]; then
-  echo "PYCODE environment variable is not set."
-  exit 1
-fi
-
-# Execute the Python code stored in the PYCODE environment variable
 python3 -c "$PYCODE"
-
