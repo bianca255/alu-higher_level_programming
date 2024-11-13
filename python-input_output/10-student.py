@@ -24,4 +24,3 @@ class Student:
                 if elem in self.__dict__.keys():
                     temp[elem] = self.__dict__[elem]
             return temp
-
