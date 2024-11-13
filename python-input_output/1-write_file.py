@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-from calculator_1 import add, sub, mul, div
-a = 10
-b = 5
+"""Defines a file-writing function."""
 
-if __name__ == "__main__":
-    print("{} + {} = {}".format(a, b, add(a, b)))
-    print("{} - {} = {}".format(a, b, sub(a, b)))
-    print("{} * {} = {}".format(a, b, mul(a, b)))
-    print("{} / {} = {}".format(a, b, div(a, b)))
+
+def write_file(filename="", text=""):
+    """Write a string to a UTF8 text file.
+    Args:
+        filename (str): The name of the file to write.
+        text (str): The text to write to the file.
+    Returns:
+        The number of characters written.
+    """
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
