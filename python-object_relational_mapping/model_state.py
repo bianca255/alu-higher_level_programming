@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 """This is the State module.
 Contains the State class that inherits from Base = declarative_base()
 """
